@@ -40,7 +40,7 @@ let airportData = "https://raw.githubusercontent.com/jjpardue/Mapping_Earthquake
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
     console.log(data);
-    
+
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJson(data).addTo(map);
 });
